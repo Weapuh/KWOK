@@ -593,7 +593,7 @@ fieldset {
   h3 {
     padding: 50px 0 50px; } }
 .alt-section {
-  background: #e5eaee;
+  background: rgba(155, 155, 155, 0.1);
   padding-bottom: 100px; }
   .alt-section h3 {
     color: #a50000; }
@@ -780,99 +780,12 @@ footer {
   text-align: center;
   font-weight: 300; }
 
-.skill-lockup {
-  max-width: 540px;
-  margin: 100px auto;
-  color: #999; }
-  .skill-lockup:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .skill-lockup .skill-unit {
-    width: 270px;
-    float: left; }
-  .skill-lockup .skill-icons {
-    font-size: 0;
-    margin: 3px 0 30px; }
-    .skill-lockup .skill-icons span {
-      display: inline-block;
-      height: 14px;
-      width: 14px;
-      background-color: #8b0000;
-      margin-right: 8px;
-      border-radius: 50%; }
-      .skill-lockup .skill-icons span:after {
-        content: "";
-        display: block;
-        height: 10px;
-        width: 10px;
-        background: #fff;
-        border-radius: 50%;
-        margin: 2px; }
-
-.skill-lockup .skill-icons.skill-1 span:nth-child(n+2), .skill-lockup .skill-icons.skill-2 span:nth-child(n+3), .skill-lockup .skill-icons.skill-3 span:nth-child(n+4), .skill-lockup .skill-icons.skill-4 span:nth-child(n+5), .skill-lockup .skill-icons.skill-5 span:nth-child(n+6), .skill-lockup .skill-icons.skill-6 span:nth-child(n+7), .skill-lockup .skill-icons.skill-7 span:nth-child(n+8), .skill-lockup .skill-icons.skill-8 span:nth-child(n+9), .skill-lockup .skill-icons.skill-9 span:nth-child(n+10), .skill-lockup .skill-icons.skill-10 span:nth-child(n+11) {
-  background: #e5eaee; }
-
-@media screen and (max-width: 541px) {
-  .skill-lockup {
-    width: 220px; }
-    .skill-lockup .skill-unit {
-      width: 220px; } }
-.section-work {
-  overflow-x: hidden; }
 
 /* Hackey-type CSS as a jQuery Alternative for when the browser does not have jQuery enabled. */
 .noscript {
   display: none; }
-
-#proj-1:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-1 {
-  display: block; }
-
-#proj-2:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-2 {
-  display: block; }
-
-#proj-3:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-3 {
-  display: block; }
-
-#proj-4:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-4 {
-  display: block; }
-
-#proj-5:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-5 {
-  display: block; }
-
-#proj-6:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-6 {
-  display: block; }
-
-#proj-7:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-7 {
-  display: block; }
-
-#proj-8:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-8 {
-  display: block; }
-
-.return {
-  display: none; }
-
-.trigger {
-  display: none; }
-  .trigger:checked ~ .work-belt {
-    left: -100%; }
-    .trigger:checked ~ .work-belt .work-wrap .work-container {
-      display: block; }
-
-/* End of gross / hackey CSS */
-.work-belt {
-  width: 200%;
-  position: relative;
-  left: 0%;
-  -webkit-transition: all, 800ms;
-  -moz-transition: all, 800ms;
-  transition: all, 800ms; }
-  .work-belt.slided {
-    -webkit-transform: translate3d(-50%, 0, 0);
-    -moz-transform: translate3d(-50%, 0, 0);
-    -ms-transform: translate3d(-50%, 0, 0);
-    -o-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0); }
+.section-products{
+  height: 1000px; }
 
 .thumb-wrap, .work-wrap {
   width: 50%;
@@ -1013,8 +926,7 @@ footer {
 .biglink {
   display: inline-block;
   color: #710000;
-  font-size: large;
-  font-size: 4vw;
+  //font-size: 4vw;
   font-weight: 300;
   line-height: 1;
   width: 90%;
