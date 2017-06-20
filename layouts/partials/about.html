@@ -1,0 +1,28 @@
+{{ "<!-- About section -->" | safeHTML }}
+<section>
+    {{ with .Site.Params.about.title }}<h3 id="about-me">{{ . }}</h3>{{ end }}
+
+    <div class="face-lockup">
+        <div class="face-img"></div>
+        <div class="icon-pencil">
+            {{ partial "icons/icon-pencil.html"}}
+        </div>
+        <div class="icon-mouse">
+            {{ partial "icons/icon-mouse.html"}}
+        </div>
+        <div class="icon-browser">
+            {{ partial "icons/icon-browser.html"}}
+        </div>
+        <div class="icon-video">
+            {{ partial "icons/icon-video.html"}}
+        </div>
+    </div>
+
+    {{ with .Site.Params.about.bio }}
+    <div class="blurb">
+        <p>{{ . | markdownify }}</p>
+
+    </div>
+
+</section>
+{{ end }}
