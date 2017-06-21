@@ -785,6 +785,32 @@ footer {
 .noscript {
   display: none; }
 
+.section-products {
+  background-image: url(../img/Buckwheat.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:150px 0px 150px;
+  height: 800px;
+}
+
+  .product-container {
+    background-color: rgba(50, 10, 10, .75);
+    padding-bottom: 0px;
+  }
+
+  .product-container h3{
+    padding: 50px 0px 50px;
+    font-size: 250%;
+    line-height: 0.2em;
+    color: white;
+    overflow: visible;
+  }
+
+  .product-container hr {
+    padding-bottom: 10px;
+  }
+
 .thumb-wrap, .work-wrap {
   width: 50%;
   float: left; }
